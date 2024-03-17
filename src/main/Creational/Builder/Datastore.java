@@ -22,6 +22,8 @@ public class Datastore {
 
     public static  class DatastoreBuilder{
         //Step 2
+        //Instead of copying properties of Outer class we can also create a instance of outer class to avoid the
+        //Duplicate code part and that will also help in making code more maintainable.
         private String host;
         private Integer port;
         private String username;
@@ -30,7 +32,6 @@ public class Datastore {
         private DatabaseType type;
 
         public Datastore build(){
-
             if(!validateObject()){
                 throw new RuntimeException("Object is Invalid");
             }
@@ -62,7 +63,5 @@ public class Datastore {
             return this.port <= 20000;
         }
     }
-
-
 
 }
