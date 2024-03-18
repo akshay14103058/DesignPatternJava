@@ -1,8 +1,6 @@
 package main.Creational.Builder;
-
 import lombok.Getter;
 import lombok.Setter;
-import javax.xml.crypto.Data;
 
 @Getter
 public class Database {
@@ -24,7 +22,6 @@ public class Database {
     //Step 2- Creating the static class
     @Setter
     public static class DatabaseBuilder {
-
         //Step 3 - Copy all properties from outer class
         private String host;
         private Integer port;
@@ -42,7 +39,6 @@ public class Database {
             return instance;
         }
     }
-
 }
 
 //Why Builder is needed :

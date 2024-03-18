@@ -10,7 +10,7 @@ import java.util.PrimitiveIterator;
 @Getter
 @Setter
 @AllArgsConstructor
-public class User implements ClonnableInterface<User> {
+public class User implements CloneableInterface<User> {
     private String name;
     private String DOB;
     private UserType type;

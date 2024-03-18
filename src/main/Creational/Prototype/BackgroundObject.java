@@ -11,7 +11,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-public class BackgroundObject implements ClonnableInterface<BackgroundObject> {
+public class BackgroundObject implements CloneableInterface<BackgroundObject> {
     private Integer x;
     private Integer y;
     private Integer height;

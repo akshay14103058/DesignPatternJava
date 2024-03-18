@@ -1,9 +1,5 @@
 package main.Creational.Prototype;
-
-import lombok.Getter;
-
 import java.util.HashMap;
-import java.util.Stack;
 
 public class Registry<ENTITY,ENTITY_TYPE> {
     HashMap<ENTITY_TYPE,ENTITY> objectStore = new HashMap<>();
@@ -16,4 +12,4 @@ public class Registry<ENTITY,ENTITY_TYPE> {
     }
 }
 
-// I have generic Registery to store any type of object.
+// I have generic Registry to store any type of object.

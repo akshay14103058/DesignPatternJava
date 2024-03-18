@@ -1,12 +1,14 @@
 package main.Creational.Prototype;
 
-
+// I have made a generic cloneableInterface so any class can implements this interface
 // Step 1 Making a clonable Interface that will help us in cloning a object and whichever class implements this there we can clone the object.
-public interface ClonnableInterface<ENTITY>{
+public interface CloneableInterface<ENTITY>{
     public ENTITY cloneObject();
 }
 
-// I have made a generic cloneableInterface so any class can implements this interface
+
+
+
 
 
 
