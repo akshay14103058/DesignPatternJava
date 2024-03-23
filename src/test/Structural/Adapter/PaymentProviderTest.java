@@ -15,7 +15,6 @@ public class PaymentProviderTest {
     public void setUp(){
         pp = new RazorPayProvider();
     }
-
     @Test
     public void testAdapter(){
         PaymentStatus status = pp.checkPayment(pp.pay(new PaymentRequest()));
